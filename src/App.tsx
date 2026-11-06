@@ -39,11 +39,11 @@ const analysisServices = [
 ];
 
 const bots = [
-  { name: '@Smm_bloger_bot', url: 'https://t.me/Smm_bloger_bot', description: 'SMM-ассистент' },
-  { name: '@V_TOP_soc_bot', url: 'https://t.me/V_TOP_soc_bot', description: 'Продвижение ВК' },
+  { name: '@Smm_bloger_bot', url: 'https://t.me/Smm_bloger_bot', description: 'Бот продвижения и накрутки соцсетей' },
+  { name: '@V_TOP_soc_bot', url: 'https://t.me/V_TOP_soc_bot', description: 'Раскрутка и продвижение' },
   { name: '@SMM_Bloger_TOP_bot', url: 'https://t.me/SMM_Bloger_TOP_bot', description: 'Накрутка для блогеров' },
-  { name: '@Marketings_SMM_bot', url: 'https://t.me/Marketings_SMM_bot', description: 'Маркетинг' },
-  { name: '@Alex_SMMkruti_bot', url: 'https://t.me/Alex_SMMkruti_bot', description: 'Быстрый рост' },
+  { name: '@Marketings_SMM_bot', url: 'https://t.me/Marketings_SMM_bot', description: 'Бот для маркетинговых задач' },
+  { name: '@Alex_SMMkruti_bot', url: 'https://t.me/Alex_SMMkruti_bot', description: 'Быстрый рост соцсетей' },
 ];
 
 function ServiceCard({ service }: { service: typeof analysisServices[0] }) {
