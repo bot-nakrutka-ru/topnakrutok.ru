@@ -215,3 +215,138 @@ h2 { margin: 0; font-size: 21px; line-height: 1.15; letter-spacing: -.65px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* ==========================================================
+   УВЕЛИЧЕННЫЙ ВАРИАНТ: более свободная ширина и читаемые элементы
+   Эти настройки переопределяют исходные размеры выше.
+   ========================================================== */
+.page-shell { width: min(1200px, calc(100% - 48px)); }
+.site-header { min-height: 70px; }
+.brand { gap: 12px; }
+.brand-mark { width: 36px; height: 36px; border-radius: 11px; }
+.brand-name { font-size: 19px; }
+.header-link { font-size: 14px; }
+
+.hero {
+  min-height: 235px;
+  padding: 27px 34px 24px;
+  margin: 14px 0 20px;
+  border-radius: 22px;
+}
+.hero-copy { max-width: 710px; }
+.eyebrow { font-size: 10px; }
+h1 { max-width: 700px; font-size: clamp(34px, 3.7vw, 45px); }
+.hero-description { max-width: 590px; font-size: 15px; line-height: 1.6; }
+.hero-meta { gap: 9px; margin-top: 15px; }
+.meta-chip { min-height: 27px; padding: 5px 11px; font-size: 11px; }
+.meta-chip strong { font-size: 11px; }
+.hero-art { flex-basis: 230px; transform: scale(1.08); transform-origin: center; }
+
+.directory-heading { margin-bottom: 14px; }
+.section-kicker { font-size: 9px; }
+h2 { font-size: 25px; }
+.result-count { font-size: 12px; }
+.toolbar { gap: 14px; margin-bottom: 19px; }
+.search-box { height: 45px; gap: 11px; padding: 0 14px; border-radius: 11px; }
+.search-box svg { width: 17px; height: 17px; }
+.search-box input { font-size: 13px; }
+.search-box kbd { width: 20px; height: 22px; font-size: 11px; }
+.filter-button { min-height: 37px; padding: 0 12px; font-size: 12px; }
+.filter-button span { font-size: 10px; }
+
+.service-section { margin-bottom: 23px; }
+.service-section-heading { gap: 12px; margin-bottom: 11px; }
+.section-icon { width: 36px; height: 36px; border-radius: 10px; }
+.section-icon svg { width: 19px; height: 19px; }
+.section-heading-copy h3 { font-size: 15px; }
+.section-heading-copy p { font-size: 11px; }
+.section-number { font-size: 9px; }
+.service-grid { gap: 11px; }
+.service-card {
+  min-height: 88px;
+  gap: 13px;
+  padding: 13px 15px;
+  border-radius: 14px;
+}
+.service-icon { width: 44px; height: 44px; border-radius: 11px; }
+.service-icon svg { width: 21px; height: 21px; }
+.telegram-tile svg { width: 22px; height: 22px; }
+.service-copy { gap: 4px; }
+.service-copy strong { font-size: 13px; }
+.service-copy > span { font-size: 10.5px; line-height: 1.4; }
+.card-action { gap: 5px; font-size: 10.5px; }
+.card-action b { font-size: 14px; }
+
+.no-results { min-height: 190px; gap: 10px; }
+.no-results-icon { font-size: 29px; }
+.no-results strong { font-size: 15px; }
+.no-results span:not(.no-results-icon) { font-size: 11px; }
+.no-results button { padding: 9px 13px; font-size: 11px; }
+.bottom-note { gap: 11px; margin-bottom: 23px; padding: 13px 15px; border-radius: 12px; }
+.note-icon { width: 19px; height: 19px; font-size: 11px; }
+.bottom-note p { font-size: 10.5px; line-height: 1.55; }
+.site-footer { min-height: 56px; gap: 14px; font-size: 10.5px; }
+.footer-brand { font-size: 11.5px; }
+.back-top { font-size: 10.5px; }
+
+@media (min-width: 900px) {
+  .service-grid { gap: 12px; }
+  .service-card { min-height: 90px; padding: 14px 16px; }
+}
+
+@media (max-width: 700px) {
+  .page-shell { width: min(calc(100% - 28px), 620px); }
+  .site-header { min-height: 58px; }
+  .brand-mark { width: 32px; height: 32px; }
+  .brand-name { font-size: 16px; }
+  .header-link { font-size: 11px; }
+  .hero { padding: 19px 18px 17px; margin: 10px 0 15px; border-radius: 16px; }
+  .eyebrow { font-size: 9px; }
+  h1 { margin: 8px 0 6px; font-size: clamp(27px, 7.2vw, 35px); letter-spacing: -1.2px; }
+  .hero-description { font-size: 12.5px; line-height: 1.5; }
+  .hero-meta { gap: 7px; margin-top: 11px; }
+  .meta-chip { min-height: 23px; padding: 4px 9px; font-size: 10px; }
+  .meta-chip strong { font-size: 10px; }
+  .directory-heading { margin-bottom: 10px; }
+  .section-kicker { font-size: 8px; }
+  h2 { font-size: 20px; }
+  .result-count { font-size: 10px; }
+  .toolbar { gap: 8px; margin-bottom: 15px; }
+  .search-box { min-height: 40px; padding-inline: 12px; }
+  .search-box input { font-size: 12px; }
+  .filters { gap: 5px; }
+  .filter-button { min-height: 31px; padding-inline: 10px; font-size: 10px; }
+  .service-section { margin-bottom: 18px; }
+  .service-section-heading { gap: 9px; margin-bottom: 9px; }
+  .section-icon { width: 31px; height: 31px; border-radius: 9px; }
+  .section-icon svg { width: 16px; height: 16px; }
+  .section-heading-copy h3 { font-size: 12.5px; }
+  .section-heading-copy p { font-size: 9px; }
+  .section-number { font-size: 8px; }
+  .service-grid { grid-template-columns: 1fr; gap: 7px; }
+  .service-card { min-height: 76px; gap: 10px; padding: 10px 11px; border-radius: 11px; }
+  .service-icon { width: 38px; height: 38px; border-radius: 10px; }
+  .service-icon svg { width: 18px; height: 18px; }
+  .telegram-tile svg { width: 19px; height: 19px; }
+  .service-copy { gap: 3px; }
+  .service-copy strong { font-size: 11.5px; }
+  .service-copy > span { font-size: 9.2px; line-height: 1.35; }
+  .card-action { gap: 3px; font-size: 9px; }
+  .card-action b { font-size: 11px; }
+  .bottom-note { margin-bottom: 17px; padding: 10px 12px; }
+  .bottom-note p { font-size: 9px; }
+  .site-footer { min-height: 46px; font-size: 9px; gap: 9px; }
+  .footer-brand { font-size: 10px; }
+  .back-top { font-size: 9px; }
+}
+
+@media (max-width: 360px) {
+  .page-shell { width: calc(100% - 20px); }
+  .hero { padding-inline: 14px; }
+  .service-card { gap: 8px; padding-inline: 9px; }
+  .service-copy strong { font-size: 11px; }
+  .service-copy > span { font-size: 8.8px; }
+  .card-action { font-size: 8px; }
+  .filter-button { padding-inline: 8px; }
+}
