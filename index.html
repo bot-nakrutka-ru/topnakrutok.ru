@@ -1,11 +1,192 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Мой первый сайт</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fc">
+  <meta name="description" content="Подборка инструментов для продвижения, анализа соцсетей и просмотра общедоступной информации. Боты Telegram и онлайн-сервисы в одном месте.">
+  <link rel="canonical" href="https://topnakrutok.ru/">
+  <title>topnakrutok.ru — инструменты для соцсетей</title>
+
+  <script>
+    // Канонический адрес сайта: HTTPS, домен без www и только главная страница.
+    (() => {
+      const canonical = 'https://topnakrutok.ru/';
+      const isCanonicalHost = window.location.hostname.toLowerCase() === 'topnakrutok.ru';
+      const isCanonicalPath = window.location.pathname === '/';
+      const isHttps = window.location.protocol === 'https:';
+      if (!isCanonicalHost || !isCanonicalPath || !isHttps) {
+        window.location.replace(canonical + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>Привет! Это мой сайт!</h1>
-    <p>Я создал его на GitHub.</p>
+<body id="top">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="https://topnakrutok.ru/" aria-label="topnakrutok.ru — на главную">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">topnakrutok<span>.ru</span></span>
+      </a>
+      <a class="header-link" href="#services">Все инструменты <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> ПОДБОРКА ПОЛЕЗНЫХ СЕРВИСОВ</div>
+          <h1 id="page-title">Инструменты для <span>соцсетей</span> — в одном месте</h1>
+          <p class="hero-description">Продвижение, аналитика и просмотр открытой информации. Выбирай подходящий сервис и переходи напрямую.</p>
+          <div class="hero-meta">
+            <span class="meta-chip"><strong>11</strong> инструментов</span>
+            <span class="meta-chip"><span class="meta-sparkle">✦</span> Быстрый доступ</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-card art-card-main">
+            <div class="art-card-top"><span class="art-dot"></span><span class="art-dot"></span><span class="art-dot"></span></div>
+            <div class="art-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="art-caption"><span>Всё нужное</span><b>под рукой</b></div>
+          </div>
+          <div class="art-bubble bubble-top">↗</div>
+          <div class="art-bubble bubble-bottom">✦</div>
+        </div>
+      </section>
+
+      <section class="directory" id="services" aria-label="Каталог сервисов">
+        <div class="directory-heading">
+          <div>
+            <div class="section-kicker">КАТАЛОГ</div>
+            <h2>Выбери инструмент</h2>
+          </div>
+          <div class="result-count" id="result-count" aria-live="polite">11 сервисов</div>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="service-search" type="search" placeholder="Найти сервис..." autocomplete="off" aria-label="Поиск по сервисам">
+            <kbd>/</kbd>
+          </label>
+          <div class="filters" role="group" aria-label="Фильтр сервисов">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Все <span>11</span></button>
+            <button class="filter-button" type="button" data-filter="bots" aria-pressed="false">Telegram <span>5</span></button>
+            <button class="filter-button" type="button" data-filter="analytics" aria-pressed="false">Аналитика <span>6</span></button>
+          </div>
+        </div>
+
+        <section class="service-section" data-section="bots" aria-labelledby="bots-title">
+          <div class="service-section-heading">
+            <div class="section-icon telegram-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m20.7 4.2-3.1 15c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.1 13 0.3 11.5c-1-.3-1-1 .2-1.5L19 2.7c.9-.3 1.7.2 1.7 1.5Z"/></svg>
+            </div>
+            <div class="section-heading-copy">
+              <h3 id="bots-title">Боты для продвижения и накрутки</h3>
+              <p>Инструменты для SMM-задач прямо в Telegram</p>
+            </div>
+            <span class="section-number">01 / 02</span>
+          </div>
+
+          <div class="service-grid">
+            <a class="service-card" data-category="bots" href="https://t.me/Smm_bloger_bot?start=site-lend1" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon telegram-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m20.7 4.2-3.1 15c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.1 13 0.3 11.5c-1-.3-1-1 .2-1.5L19 2.7c.9-.3 1.7.2 1.7 1.5Z"/></svg></span>
+              <span class="service-copy"><strong>@Smm_bloger_bot</strong><span>Быстрый старт для продвижения и повседневных SMM-задач.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="bots" href="https://t.me/V_TOP_soc_bot?start=site-lend2" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon telegram-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m20.7 4.2-3.1 15c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.1 13 0.3 11.5c-1-.3-1-1 .2-1.5L19 2.7c.9-.3 1.7.2 1.7 1.5Z"/></svg></span>
+              <span class="service-copy"><strong>@V_TOP_soc_bot</strong><span>Удобный бот с решениями для роста активности и охватов.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="bots" href="https://t.me/SMM_Bloger_TOP_bot?start=site-lend3" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon telegram-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m20.7 4.2-3.1 15c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.1 13 0.3 11.5c-1-.3-1-1 .2-1.5L19 2.7c.9-.3 1.7.2 1.7 1.5Z"/></svg></span>
+              <span class="service-copy"><strong>@SMM_Bloger_TOP_bot</strong><span>Подборка инструментов для продвижения аккаунтов и публикаций.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="bots" href="https://t.me/Marketings_SMM_bot?start=site-lend4" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon telegram-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m20.7 4.2-3.1 15c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.1 13 0.3 11.5c-1-.3-1-1 .2-1.5L19 2.7c.9-.3 1.7.2 1.7 1.5Z"/></svg></span>
+              <span class="service-copy"><strong>@Marketings_SMM_bot</strong><span>SMM-инструменты для работы с аудиторией и видимостью контента.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="bots" href="https://t.me/Alex_SMMkruti_bot?start=site-lend5" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon telegram-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m20.7 4.2-3.1 15c-.2 1.1-.9 1.4-1.8.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L5.1 13 0.3 11.5c-1-.3-1-1 .2-1.5L19 2.7c.9-.3 1.7.2 1.7 1.5Z"/></svg></span>
+              <span class="service-copy"><strong>@Alex_SMMkruti_bot</strong><span>Ещё один вариант для решения задач по продвижению в соцсетях.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="service-section" data-section="analytics" aria-labelledby="analytics-title">
+          <div class="service-section-heading">
+            <div class="section-icon analytics-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h17M8 15v-3m5 3V8m5 7V5"/></svg>
+            </div>
+            <div class="section-heading-copy">
+              <h3 id="analytics-title">Анализ и анонимный просмотр</h3>
+              <p>Сервисы для работы с открытой информацией и статистикой</p>
+            </div>
+            <span class="section-number">02 / 02</span>
+          </div>
+
+          <div class="service-grid">
+            <a class="service-card" data-category="analytics" href="https://spyig.com/r?start=569CE832" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon purple-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.7"/></svg></span>
+              <span class="service-copy"><strong>SpyIG</strong><span>Инструмент для просмотра общедоступного контента Instagram.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="analytics" href="https://instashpion.ru?p=921de55fab9b959bd25b87375cf9e0f9" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon pink-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle class="svg-fill" cx="17.5" cy="6.8" r="1"/></svg></span>
+              <span class="service-copy"><strong>Instashpion</strong><span>Помогает изучать доступную активность открытых Instagram-профилей.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="analytics" href="https://kogdavseti.ru/?p=9fc31733b273680a0531eee5c8a1e502" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon blue-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.5-3.2 2.5-5 6-5s5.5 1.8 6 5M16 5.5a3 3 0 0 1 0 5.8M17 14c2.3.5 3.5 2.1 4 5"/></svg></span>
+              <span class="service-copy"><strong>ВК Шпион</strong><span>Сервис для изучения публичной информации и активности ВКонтакте.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="analytics" href="https://insta-parser.ru?p=c9437b5a39a886169827e5f43de34eeb" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon orange-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 10h16M4 15h10M4 20h7"/><circle cx="18" cy="17" r="3"/><path d="m20.2 19.2 1.5 1.5"/></svg></span>
+              <span class="service-copy"><strong>InstaParser</strong><span>Помогает собирать и систематизировать открытые данные Instagram.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="analytics" href="https://getwinner.ru?p=523e10f83226bd9651c0d603277d19d0" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon green-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v4a4 4 0 0 1-8 0V4ZM8 6H4v2a4 4 0 0 0 4 4m8-6h4v2a4 4 0 0 1-4 4m-4 0v4m-4 4h8m-4-4v4"/></svg></span>
+              <span class="service-copy"><strong>Getwinner</strong><span>Инструмент для проведения розыгрышей и выбора победителей.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+            <a class="service-card" data-category="analytics" href="https://ru.spamguardapp.com?p=bf454866c06f29b8c41a21107e1f5801" target="_blank" rel="nofollow sponsored noopener noreferrer">
+              <span class="service-icon shield-tile" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.5-2.8 7.8-7 10-4.2-2.2-7-5.5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <span class="service-copy"><strong>Spamguardapp</strong><span>Проверка аудитории на спам и подозрительные признаки активности.</span></span>
+              <span class="card-action">Открыть <b aria-hidden="true">↗</b></span>
+            </a>
+          </div>
+        </section>
+
+        <div class="no-results" id="no-results" hidden>
+          <span class="no-results-icon">⌕</span>
+          <strong>Ничего не найдено</strong>
+          <span>Попробуй изменить запрос или выбрать другую категорию.</span>
+          <button type="button" id="reset-search">Сбросить фильтры</button>
+        </div>
+      </section>
+
+      <section class="bottom-note" aria-label="Информация о сервисах">
+        <span class="note-icon" aria-hidden="true">i</span>
+        <p>Ссылки ведут на сторонние ресурсы и могут содержать реферальные параметры. Возможности, правила и условия сервисов определяются их владельцами.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="https://topnakrutok.ru/">topnakrutok.ru</a>
+      <span>Полезные инструменты для соцсетей</span>
+      <a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Наверх ↑</a>
+    </footer>
+  </div>
 </body>
 </html>
