@@ -36,6 +36,13 @@ const analysisServices = [
     icon: '🎲',
     gradient: 'from-amber-500 to-orange-600',
   },
+  {
+    name: 'Spamguardapp',
+    description: 'Умный щит для Instagram*: автоматически блокирует ботов, спам и токсичные комментарии. Твой аккаунт — твоя крепость.',
+    url: 'https://spamguardapp.com',
+    icon: '🛡️',
+    gradient: 'from-red-600 to-rose-600',
+  },
 ];
 
 const bots = [
